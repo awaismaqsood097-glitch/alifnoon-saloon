@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="ALIFNOON SALON - Pakistan's premium women's beauty salon. Bridal makeup, hair styling, facials, and more." />
+<link rel="stylesheet" href="/css/style.css" />
+<title>ALIFNOON SALON — Luxury Beauty for Women</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<!-- Our CSS -->
+<link rel="stylesheet" href="/css/style.css" />
+
+<!-- Stripe.js for payments -->
+<script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+
+<!-- ═══════════ TOP BAR ═══════════ -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><i class="fa-solid fa-phone"></i> +92 300 1234567</span>
+    <span><i class="fa-solid fa-clock"></i> Mon–Sun: 10:00 AM – 9:00 PM</span>
+    <span><i class="fa-solid fa-location-dot"></i> Gulberg III, Lahore</span>
+  </div>
+</div>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">ا</span>
+      <span class="logo-text">ALIFNOON<small>SALON</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="btn btn-primary nav-cta">Book Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="hero-tag">✦ Luxury Beauty Studio for Women ✦</p>
+    <h1>Where Elegance <br /><em>Meets Artistry</em></h1>
+    <p class="hero-desc">
+      Experience Pakistan's most refined beauty destination — bridal artistry,
+      expert hair styling, and transformative skincare crafted just for you.
+    </p>
+    <div class="hero-buttons">
+      <a href="#booking" class="btn btn-primary">Book Appointment</a>
+      <a href="https://wa.me/923406753402?text=Assalam-o-Alaikum!%20I%20would%20like%20to%20book%20an%20appointment%20at%20ALIFNOON%20SALON."
+         target="_blank" class="btn btn-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FEATURES ═══════════ -->
+<section class="features">
+  <div class="container features-grid">
+    <div class="feature">
+      <i class="fa-solid fa-crown"></i>
+      <h4>Premium Products</h4>
+      <p>Only luxury international brands</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-user-tie"></i>
+      <h4>Expert Artists</h4>
+      <p>Certified beauty professionals</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-spa"></i>
+      <h4>Hygiene First</h4>
+      <p>Sanitized tools & private rooms</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-heart"></i>
+      <h4>Women Only</h4>
+      <p>Safe & private environment</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-img"></div>
+    <div class="about-text">
+      <p class="section-tag">About Us</p>
+      <h2>A Legacy of <em>Beauty & Grace</em></h2>
+      <p>
+        ALIFNOON SALON is a premium women-only beauty destination based in Lahore, Pakistan.
+        Our name — "Alifnoon" — symbolizes the beginning and the light: a promise of new
+        beauty, confidence, and self-love for every woman who walks through our doors.
+      </p>
+      <p>
+        From signature bridal transformations to everyday self-care, our highly trained
+        artists use only the finest international products, ensuring every visit feels
+        nothing less than royal.
+      </p>
+      <div class="about-stats">
+        <div><strong>10+</strong><span>Years Experience</span></div>
+        <div><strong>5,000+</strong><span>Happy Clients</span></div>
+        <div><strong>500+</strong><span>Bridal Makeovers</span></div>
+      </div>
+      <a href="#booking" class="btn btn-outline">Book Your Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SERVICES ═══════════ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-tag">Our Services</p>
+      <h2>Crafted for <em>Every Woman</em></h2>
+      <p class="section-sub">Indulge in our curated menu of premium beauty services.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+      <!-- Loaded dynamically from /api/services -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GALLERY ═══════════ -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-tag">Gallery</p>
+      <h2>Our <em>Signature Work</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80')"></div>
+      <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80')"></div>
+      <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80')"></div>
+      <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80')"></div>
+      <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1571875257727-256c39da42af?w=800&q=80')"></div>
+      <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1503236823255-94609f598e71?w=800&q=80')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BOOKING ═══════════ -->
+<section class="section booking" id="booking">
+  <div class="container booking-wrap">
+
+    <div class="booking-info">
+      <p class="section-tag light">Appointment</p>
+      <h2>Book Your <em>Beauty Session</em></h2>
+      <p>
+        Fill out the form and secure your seat with a small deposit.
+        You'll receive an SMS confirmation instantly.
+      </p>
+      <ul class="booking-list">
+        <li><i class="fa-solid fa-check"></i> Free consultation with senior artist</li>
+        <li><i class="fa-solid fa-check"></i> SMS + WhatsApp confirmations</li>
+        <li><i class="fa-solid fa-check"></i> Online payment (Stripe / Card)</li>
+      </ul>
+      <div class="booking-contacts">
+        <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+        <p><i class="fa-solid fa-envelope"></i> hello@alifnoonsalon.pk</p>
+      </div>
+      <a class="btn btn-whatsapp" target="_blank"
+         href="https://wa.me/923406753402?text=Assalam-o-Alaikum!%20I%20would%20like%20to%20book%20an%20appointment.">
+        <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+      </a>
+    </div>
+
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required maxlength="100" placeholder="e.g. Ayesha Khan" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone (SMS will be sent here) *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+92 3XX XXXXXXX" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Haircut & Styling</option>
+            <option>Hair Coloring</option>
+            <option>Hair Treatment</option>
+            <option>Bridal Makeup</option>
+            <option>Party Makeup</option>
+            <option>Facial & Skincare</option>
+            <option>Manicure & Pedicure</option>
+            <option>Waxing & Threading</option>
+            <option>Mehndi Design</option>
+            <option>Full Bridal Package</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Preferred Date *</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time *</label>
+          <select id="time" name="time" required>
+            <option value="">Select time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+            <option>06:00 PM</option>
+            <option>07:00 PM</option>
+            <option>08:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes" rows="3" maxlength="500" placeholder="Any special requests..."></textarea>
+      </div>
+
+      <div class="pay-toggle">
+        <label class="checkbox">
+          <input type="checkbox" id="payOnline" checked />
+          <span>Pay deposit online now (Rs. <span id="depositAmt">2000</span>) — Secure payment via Stripe</span>
+        </label>
+        <p class="pay-note">
+          <i class="fa-solid fa-lock"></i> Payment is optional. You can pay at the salon.
+        </p>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" id="bookBtn">
+        <span>Confirm Booking</span>
+      </button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+
+  </div>
+</section>
+
+<!-- ═══════════ PAYMENT MODAL ═══════════ -->
+<div class="modal hidden" id="paymentModal">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h3>Secure Payment</h3>
+    <p class="modal-sub">
+      Pay deposit of Rs. <span id="modalAmount">2000</span> to confirm your appointment.
+    </p>
+    <div id="paymentElement"></div>
+    <button class="btn btn-primary btn-block" id="payBtn">
+      <i class="fa-solid fa-lock"></i> Pay Now
+    </button>
+    <div class="form-msg" id="payMsg"></div>
+    <p class="modal-foot">
+      <i class="fa-solid fa-shield-halved"></i> Secured by Stripe. We never store your card.
+    </p>
+  </div>
+</div>
+
+<!-- ═══════════ REVIEWS ═══════════ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-tag">Testimonials</p>
+      <h2>Loved by <em>Our Clients</em></h2>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid">
+      <!-- Loaded dynamically from /api/reviews -->
+    </div>
+
+    <div class="review-form-wrap">
+      <h3>Share Your Experience</h3>
+      <form id="reviewForm" class="review-form">
+        <input type="text" name="name" placeholder="Your Name" required maxlength="80" />
+        <select name="rating" required>
+          <option value="">Rating</option>
+          <option value="5">★★★★★ Excellent</option>
+          <option value="4">★★★★☆ Very Good</option>
+          <option value="3">★★★☆☆ Good</option>
+          <option value="2">★★☆☆☆ Fair</option>
+          <option value="1">★☆☆☆☆ Poor</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your experience..." required maxlength="600" rows="3"></textarea>
+        <button type="submit" class="btn btn-outline">Submit Review</button>
+        <div class="form-msg" id="reviewMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <p class="section-tag">Visit Us</p>
+      <h2>Come Say <em>Salaam</em></h2>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Address</strong><br />
+            Main Boulevard, Gulberg III, Lahore, Pakistan
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Phone</strong><br />
+            <a href="tel:+923406753402">+92 340 6753402</a>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Email</strong><br />
+            <a href="mailto:hello@alifnoonsalon.pk">hello@alifnoonsalon.pk</a>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <strong>Hours</strong><br />
+            Monday – Sunday: 10:00 AM – 9:00 PM
+          </div>
+        </li>
+      </ul>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://wa.me/923406753402" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Gulberg%20III%20Lahore&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="ALIFNOON SALON Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="logo">
+        <span class="logo-mark">ا</span>
+        <span class="logo-text">ALIFNOON<small>SALON</small></span>
+      </div>
+      <p class="footer-desc">Luxury beauty for the modern Pakistani woman.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li>Bridal Makeup</li>
+        <li>Hair Styling</li>
+        <li>Facials & Skincare</li>
+        <li>Mani & Pedi</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Admin</h4>
+      <ul>
+        <li><a href="/admin.html">Admin Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> ALIFNOON SALON. All rights reserved. Crafted with ♥ in Pakistan.</p>
+  </div>
+</footer>
+
+<!-- Our JavaScript -->
+<script src="/js/main.js"></script>
+
+</body>
+</html>

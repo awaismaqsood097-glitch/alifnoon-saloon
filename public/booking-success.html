@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Payment Successful — ALIFNOON SALON</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', -apple-system, sans-serif;
+    background: linear-gradient(135deg, #1a1414, #2a2020);
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  .card {
+    background: #fff;
+    color: #3a3230;
+    border-radius: 16px;
+    padding: 50px 40px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+    animation: slideUp 0.6s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card i.check {
+    color: #2d7a4a;
+    font-size: 4rem;
+    margin-bottom: 16px;
+    animation: pop 0.5s ease 0.2s both;
+  }
+
+  @keyframes pop {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .card h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1a1414;
+    font-weight: 600;
+  }
+
+  .card p {
+    color: #7a6b65;
+    margin-bottom: 24px;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  .card .highlight {
+    color: #2d7a4a;
+    font-weight: 600;
+  }
+
+  .info-box {
+    background: #f5e6e0;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 24px;
+    text-align: left;
+    font-size: 0.88rem;
+    color: #3a3230;
+  }
+
+  .info-box strong {
+    color: #a47d66;
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .info-box .item {
+    margin-bottom: 12px;
+  }
+
+  .info-box .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 13px 28px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #c9a18a, #a47d66);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 6px 4px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(201, 161, 138, 0.5);
+  }
+
+  .btn-whatsapp {
+    background: #25d366;
+  }
+
+  .btn-whatsapp:hover {
+    background: #1ebe57;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+  }
+
+  .btn i {
+    margin-right: 6px;
+  }
+
+  .footer-note {
+    margin-top: 24px;
+    font-size: 0.78rem;
+    color: #7a6b65;
+  }
+
+  .footer-note i {
+    color: #c9a18a;
+  }
+
+  @media (max-width: 500px) {
+    .card {
+      padding: 36px 24px;
+    }
+    .card h1 {
+      font-size: 1.6rem;
+    }
+    .card i.check {
+      font-size: 3rem;
+    }
+    .btn {
+      width: 100%;
+      margin: 6px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <i class="fa-solid fa-circle-check check"></i>
+    <h1>Payment Successful!</h1>
+    <p>
+      Aap ka deposit <span class="highlight">receive</span> ho gaya hai.
+      Aap ki appointment confirm hai.
+      Aap ko SMS bhi bhej diya gaya hai. 🌸
+    </p>
+
+    <div class="info-box">
+      <div class="item">
+        <strong>Booking Status</strong>
+        Confirmed ✅
+      </div>
+      <div class="item">
+        <strong>Confirmation</strong>
+        SMS sent to your phone
+      </div>
+      <div class="item">
+        <strong>What's Next?</strong>
+        Our team will contact you shortly to confirm the exact time.
+      </div>
+    </div>
+
+    <a href="/" class="btn">
+      <i class="fa-solid fa-house"></i> Back to Home
+    </a>
+
+    <a href="https://wa.me/923406753402?text=Assalam-o-Alaikum!%20I%20just%20paid%20the%20deposit%20for%20my%20appointment%20at%20ALIFNOON%20SALON."
+       target="_blank"
+       class="btn btn-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i> Message on WhatsApp
+    </a>
+
+    <p class="footer-note">
+      <i class="fa-solid fa-heart"></i>
+      Thank you for choosing ALIFNOON SALON
+    </p>
+  </div>
+
+</body>
+</html>
